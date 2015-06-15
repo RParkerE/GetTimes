@@ -3,7 +3,7 @@
   sunset times, as well as if it is daylight savings
   or not for a specified location, or for your location.
   Created by Robert P. Ellwanger, June 14, 2015.
-  Licensed under Apache License v2.0.
+  Licensed under LGPL v3.0.
 */
 
 #include <Bridge.h>
