@@ -67,7 +67,7 @@ Functions for managing the location services are:
 ##Contains
 The GetTimes directory contains the GetTimes and Time library and some example sketches:
 
-- sunsetsunrise.ino shows an example of retrieving the sunset and sunrise time for a certain location and 
+- riseandset.ino shows an example of retrieving the sunset and sunrise time for a certain location and 
   printing them to the console
 
 - springorfall.ino shows an example of how to see wether or not you are in daylight savings or not
