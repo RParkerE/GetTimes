@@ -75,9 +75,6 @@ float GetTimes::sunrise()
    }
    localRiseTime = (solarNoon * 1440 - haSunrise * 4) / 1440;
    
-   Serial.print("Sunrise is at: ");
-   Serial.println(convertToTime(localRiseTime));
-   
    return localRiseTime;
 }
 
@@ -129,9 +126,6 @@ float GetTimes::sunset()
      solarNoon = (720 - 4 * longi - eqTime + -5 * 60) / 1440; //TODO: Change -5 to a method for finding timezone
    }
    localSetTime = (solarNoon * 1440 + haSunrise * 4) / 1440;
-   
-   Serial.print("Sunset is at: ");
-   Serial.println(convertToTime(localSetTime));
    
    return localSetTime;
 }
@@ -186,9 +180,6 @@ String GetTimes::getLon() {
        lon = clientLon.readString();
     }
     
-    Serial.print("Lon: ");
-    Serial.println(lon);
-    
     return lon;
 }
 
@@ -199,9 +190,6 @@ String GetTimes::getLat() {
     while (clientLat.available()) {
        lat = clientLat.readString();
     }
-    
-    Serial.print("Lat: ");
-    Serial.println(lat);
     
     return lat;
 }
