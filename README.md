@@ -16,15 +16,15 @@ doing the calculations his/her self.
 ##Functions
 
 - sunrise();
-  - the sunrise hour and minute
+  - the sunrise hour and minute in a float
 - sunset();
-  - the minute now (0-59)          
+  - the sunset hour and minute        
 - daylightSavings();
-  - the second now (0-59) 
+  - whether or not it is currently daylight savings time or not 
 - getLon();
-  - the day now (1-31)
+  - get your current longitude (only with internet)
 - getLat();
-  - day of the week, Sunday is day 0 
+  - get your current latitude (only with internet)
 - convertToTime();
   - takes the float from sunrise() or sunset() and converts it to a string 
   
