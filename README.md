@@ -72,6 +72,8 @@ The GetTimes directory contains the GetTimes and Time library and some example s
 
 - springorfall.ino shows an example of how to see wether or not you are in daylight savings or not
 
+- mylocation.ino shows an example of retrieving and printing your current location (used when connected to the internet)
+
  
 ##Contributors:
 RPBruiser
