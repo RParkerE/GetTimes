@@ -11,7 +11,7 @@ doing the calculations his/her self.
 - [Function](#functions)
 - [Usage](#how-to-get-and-use)
 - [What Is In It?](#contains)
-- [CONTRIBUTORS](#contributors)
+- [Contributors](#contributors)
 
 ##Functions
 
