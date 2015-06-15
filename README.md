@@ -8,23 +8,31 @@ doing the calculations his/her self.
 
 ##CONTENTS
 
-- [Function](#functions)
+- [Functions](#functions)
 - [Usage](#how-to-get-and-use)
 - [What Is In It?](#contains)
 - [Contributors](#contributors)
 
 ##Functions
 
-- sunrise();                // the sunrise hour and minute
-- sunset();                 // the minute now (0-59)          
-- daylightSavings();        // the second now (0-59) 
-- getLon();                 // the day now (1-31)
-- getLat();                 // day of the week, Sunday is day 0 
-- convertToTime();          // takes the float from sunrise() or sunset() and converts it to a string 
+- sunrise();
+  - the sunrise hour and minute
+- sunset();
+  - the minute now (0-59)          
+- daylightSavings();
+  - the second now (0-59) 
+- getLon();
+  - the day now (1-31)
+- getLat();
+  - day of the week, Sunday is day 0 
+- convertToTime();
+  - takes the float from sunrise() or sunset() and converts it to a string 
   
 Functions for managing the location services are:  
-GetTimes();             // set the system location to current location (only use when connected to internet)
-GetTimes(lat, lon);     // alternative to above, lat and lon are string of the latitude and longitude of the position
+- GetTimes();
+  - set the system location to current location (only use when connected to internet)
+- GetTimes(lat, lon);
+  - alternative to above, lat and lon are string of the latitude and longitude of the position
 
 ##How to get and use
 ###Windows
