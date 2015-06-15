@@ -4,7 +4,7 @@
   or not for a specified location, or for your location.
   Also is able to find your position when using internet.
   Created by Robert P. Ellwanger, June 14, 2015.
-  Licensed under Apache License v2.0.
+  Licensed under LGPL v3.0.
 */
 
 #ifndef GetTimes_h
