@@ -20,10 +20,10 @@ GetTimes::GetTimes()
   _lat = getLat();
 }
 
-GetTimes::GetTimes(String lon, String lat)
+GetTimes::GetTimes(String lat, String lon)
 {
-  _lon = lon;
   _lat = lat;
+  _lon = lon;
 }
 
 float GetTimes::sunrise()
