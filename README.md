@@ -50,7 +50,7 @@ Functions for managing the location services are:
 
 - Download the .zip file
 - Go to "Downloads"
-- - Click on the .zip file you just downloaded
+- Click on the .zip file you just downloaded
 - `Extract All`
 - Open the Arduino IDE
 - Add a library
