@@ -1,7 +1,7 @@
 #include GetTimes.h
 
 void setup() {
-  GetTimes();
+  GetTimes("33.7646", "-78.787");
 }
 void loop() {
   Serial.println("Sunrise is at: " + convertToTime(sunrise()));
