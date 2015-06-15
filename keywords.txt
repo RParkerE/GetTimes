@@ -1,0 +1,6 @@
+GetTimes               KEYWORD1
+sunrise                KEYWORD2
+sunset                 KEYWORD3
+daylightSavings        KEYWORD4
+getLon                 KEYWORD5
+getLat                 KEYWORD6
