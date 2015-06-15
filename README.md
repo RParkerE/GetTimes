@@ -8,13 +8,13 @@ doing the calculations his/her self.
 
 ##Functions
 
--sunrise();               // the sunrise hour and minute
--sunset();                // the minute now (0-59)          
--daylightSavings();       // the second now (0-59) 
--getLon();                // the day now (1-31)
--getLat();                // day of the week, Sunday is day 0 
--convertToTime();         // takes the float from sunrise() or 
-                         // sunset() and converts it to a string 
+- sunrise();               // the sunrise hour and minute
+- sunset();                // the minute now (0-59)          
+- daylightSavings();       // the second now (0-59) 
+- getLon();                // the day now (1-31)
+- getLat();                // day of the week, Sunday is day 0 
+- convertToTime();         // takes the float from sunrise() or 
+                           // sunset() and converts it to a string 
   
 Functions for managing the location services are:  
 GetTimes();             // set the system location to current location (only use when connected to internet)
