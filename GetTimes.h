@@ -16,7 +16,7 @@ class GetTimes
 {
   public:
     GetTimes();
-    GetTimes(String lat, String lon);
+    GetTimes(String lat, String lon, int utcOffset);
     float sunrise();
     float sunset();
     boolean daylightSavings();
