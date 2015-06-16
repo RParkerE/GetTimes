@@ -8,25 +8,26 @@
  */
 
 #ifndef GetTimes_h
-  #define GetTimes_h
-  
-  #include "Arduino.h"
-  
-  class GetTimes
+#define GetTimes_h
+
+#include "Arduino.h"
+
+class GetTimes
 {
-  public:
-    GetTimes(int utcOffset);
-    GetTimes(String lat, String lon, int utcOffset);
-    float sunrise();
-    float sunset();
-    boolean daylightSavings();
-    String getLon();
-    String getLat();
-    String convertToTime(float n)
-  private:
-    String _lon;
-    String _lat;
-    int _utcOffset;
+ public:
+  GetTimes(int utcOffset);
+  GetTimes(String lat, String lon, int utcOffset);
+  float sunrise();
+  float sunset();
+  boolean daylightSavings();
+  String getLon();
+  String getLat();
+  String convertToTime(float n)
+ private:
+  String _lon;
+  String _lat;
+  int _utcOffset;
 };
 
 #endif
+
