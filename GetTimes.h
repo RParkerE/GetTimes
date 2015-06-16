@@ -24,8 +24,9 @@ class GetTimes
     String getLat();
 	String convertToTime(float n)
   private:
-    int _lon;
-    int _lat;
+    String _lon;
+    String _lat;
+    int _utcOffset;
 };
 
 #endif
