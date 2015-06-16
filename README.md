@@ -31,8 +31,8 @@ doing the calculations his/her self.
 Functions for managing the location services are:  
 - GetTimes();
   - set the system location to current location (only use when connected to internet)
-- GetTimes(lat, lon);
-  - alternative to above, lat and lon are string of the latitude and longitude of the position
+- GetTimes(lat, lon, utcOffset);
+  - alternative to above, lat and lon are string of the latitude and longitude of the position, it also takes your timezone
 
 ##How to get and use
 ###Windows
