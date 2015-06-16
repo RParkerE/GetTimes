@@ -14,11 +14,11 @@
 #include "Arduino.h"
 #include "GetTimes.h"
 
-GetTimes::GetTimes()
+GetTimes::GetTimes(int utcOffset)
 {
   _lon = getLon();
   _lat = getLat();
-  _utcOffset = -5;
+  _utcOffset = utcOffset;
 }
 
 GetTimes::GetTimes(String lat, String lon, int utcOffset)
