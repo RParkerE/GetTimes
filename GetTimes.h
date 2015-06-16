@@ -22,7 +22,7 @@ class GetTimes
     boolean daylightSavings();
     String getLon();
     String getLat();
-	String convertToTime(float n)
+    String convertToTime(float n)
   private:
     String _lon;
     String _lat;
