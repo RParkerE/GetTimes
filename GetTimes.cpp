@@ -18,12 +18,14 @@ GetTimes::GetTimes()
 {
   _lon = getLon();
   _lat = getLat();
+  _utcOffset = -5;
 }
 
-GetTimes::GetTimes(String lat, String lon)
+GetTimes::GetTimes(String lat, String lon, int utcOffset)
 {
   _lat = lat;
   _lon = lon;
+  _utcOffset = utcOffset;
 }
 
 float GetTimes::sunrise()
@@ -67,11 +69,11 @@ float GetTimes::sunrise()
      sin(4 * D2R * (longSun)) - 1.25 * eOrbit * eOrbit * sin(2 * D2R * (anomSun)));
    haSunrise = R2D * (acos(cos(D2R * (90.833)) / (cos(D2R * (lati)) * cos(D2R * (sunDeclin))) - tan(D2R * (lati)) * tan(D2R * (sunDeclin))));
    if (daylight == true) {
-     solarNoon = (720 - 4 * longi - eqTime + -5 * 60) / 1440; //TODO: Change -5 to a method for finding timezone
+     solarNoon = (720 - 4 * longi - eqTime + utcOffset * 60) / 1440;
      solarNoon = solarNoon + .041667;
    }
    else {
-     solarNoon = (720 - 4 * longi - eqTime + -5 * 60) / 1440; //TODO: Change -5 to a method for finding timezone
+     solarNoon = (720 - 4 * longi - eqTime + utcOffset * 60) / 1440;
    }
    localRiseTime = (solarNoon * 1440 - haSunrise * 4) / 1440;
    
@@ -119,11 +121,11 @@ float GetTimes::sunset()
      sin(4 * D2R * (longSun)) - 1.25 * eOrbit * eOrbit * sin(2 * D2R * (anomSun)));
    haSunrise = R2D * (acos(cos(D2R * (90.833)) / (cos(D2R * (lati)) * cos(D2R * (sunDeclin))) - tan(D2R * (lati)) * tan(D2R * (sunDeclin))));
    if (daylight == true) {
-     solarNoon = (720 - 4 * longi - eqTime + -5 * 60) / 1440; //TODO: Change -5 to a method for finding timezone
+     solarNoon = (720 - 4 * longi - eqTime + utcOffset * 60) / 1440; 
      solarNoon = solarNoon + .041667;
    }
    else {
-     solarNoon = (720 - 4 * longi - eqTime + -5 * 60) / 1440; //TODO: Change -5 to a method for finding timezone
+     solarNoon = (720 - 4 * longi - eqTime + utcOffset * 60) / 1440;
    }
    localSetTime = (solarNoon * 1440 + haSunrise * 4) / 1440;
    
