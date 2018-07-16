@@ -1,6 +1,6 @@
-GetTimes               KEYWORD1
-sunrise                KEYWORD2
-sunset                 KEYWORD2
-daylightSavings        KEYWORD2
-getLon                 KEYWORD2
-getLat                 KEYWORD2
+GetTimes	KEYWORD1
+sunrise	KEYWORD2
+sunset	KEYWORD2
+daylightSavings	KEYWORD2
+getLon	KEYWORD2
+getLat	KEYWORD2
