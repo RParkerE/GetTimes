@@ -59,7 +59,7 @@ Functions for managing the location services are:
 ### Unix
 
 - `sudo apt-get install git-core`
-- `git clone https://github.com/RPBruiser/MagicLamp.git`
+- `git clone https://github.com/RParkerE/GetTimes.git`
 - Open the Arduino IDE
 - Add a library
 - Add GetTimes.h
