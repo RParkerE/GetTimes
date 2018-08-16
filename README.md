@@ -1,4 +1,4 @@
-#Arduino GetTimes Library
+# Arduino GetTimes Library
 GetTimes is a library for getting the sunrise and sunset times, as well as if it is 
 daylight savings or not for a specified location, or for your location. Also is able to 
 find your position when using internet.
@@ -6,14 +6,14 @@ find your position when using internet.
 A primary goal was to enable the user to easily get sunset and sunrise times without
 doing the calculations his/her self.
 
-##CONTENTS
+## CONTENTS
 
 - [Functions](#functions)
 - [Usage](#how-to-get-and-use)
 - [What Is In It?](#contains)
 - [Contributors](#contributors)
 
-##Functions
+## Functions
 
 - sunrise();
   - the sunrise hour and minute in a float
@@ -34,8 +34,8 @@ Functions for managing the location services are:
 - GetTimes(lat, lon, utcOffset);
   - alternative to above, lat and lon are string of the latitude and longitude of the position, it also takes your time zone
 
-##How to get and use
-###Windows
+## How to get and use
+### Windows
 
 - Download the .zip file
 - Click on "My Computer".
@@ -46,7 +46,7 @@ Functions for managing the location services are:
 - Add a library
 - Add GetTimes.h
 
-###Macintosh
+### Macintosh
 
 - Download the .zip file
 - Go to "Downloads"
@@ -56,7 +56,7 @@ Functions for managing the location services are:
 - Add a library
 - Add GetTimes.h
 
-###Unix
+### Unix
 
 - `sudo apt-get install git-core`
 - `git clone https://github.com/RPBruiser/MagicLamp.git`
@@ -64,7 +64,7 @@ Functions for managing the location services are:
 - Add a library
 - Add GetTimes.h
 
-##Contains
+## Contains
 The GetTimes directory contains the GetTimes and Time library and some example sketches:
 
 - riseandset.ino shows an example of retrieving the sunset and sunrise time for a certain location and 
@@ -75,5 +75,5 @@ The GetTimes directory contains the GetTimes and Time library and some example s
 - mylocation.ino shows an example of retrieving and printing your current location (used when connected to the internet)
 
  
-##Contributors:
-RPBruiser
+## Contributors:
+Parker Ellwanger
